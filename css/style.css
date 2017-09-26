@@ -1,0 +1,26 @@
+body{
+    width: 100%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    font-size: .12rem;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+.swiper-container{
+    background-color: red;
+    width: 100% ;
+    height: auto;
+}
+.title{
+    display: -webkit-flex;
+
+
+}
+.title>li{
+    -webkit-flex: 1;
+     text-align: center;
+}
+.bg{
+    background-color: #001f3f;
+}

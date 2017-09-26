@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+<div class="pat">
+    <ul class="title" id="pT">
+        <li>首页</li>
+        <li>新闻</li>
+        <li>文化</li>
+    </ul>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <ul>
+                <li>都是看聚散离合</li>
+                <li>都是看聚散离合</li>
+                <li>都是看聚散离合</li>
+                <li>都是看聚散离合</li>
+                <li>都是看聚散离合</li>
+            </ul>
+        </div>
+        <div class="swiper-slide">
+            <ul>
+                <li>都是看聚散离合</li>
+                <li>都是看聚</li>
+                <li>都是看聚散离合</li>
+                <li>都是</li>
+                <li>都是看聚散离合</li>
+            </ul>
+        </div>
+        <div class="swiper-slide">
+            <ul>
+                <li>都是看聚散离合</li>
+                <li>都是看聚散离合</li>
+                <li>都是看聚散离合</li>
+                <li>都是看聚散离合</li>
+                <li>都是看聚散离合</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" >
+    var swiper=new Swiper(".swiper-container",{
+      pagination:".swiper-pagination"
+    });
+function slideTo(index){
+    swiper.slideTo(index);
+}
+  $("#pT").on("click","li", function () {
+      var idnex=$(this).index();
+      $(this).addClass("bg").siblings().removeClass("bg");
+      slideTo(idnex);
+  })
+</script>
+
+</body>
+</html>
